@@ -3,48 +3,64 @@
     "name": "Sony B-7III",
     "description": "yes is camera",
     "price": 1000,
-    "Category": "Electronics"
+    "category": {
+      "name": "Electronics"
+    }
   },
   {
     "name": "Playstation 5",
     "description": "microsoft approved",
     "price": 800,
-    "Category": "Electronics"
+    "category": {
+      "name": "Electronics"
+    }
   },
   {
     "name": "Gaming Chair",
     "description": "brand new, hardly used",
     "price": 100,
-    "Category": "Furniture"
+    "category": {
+      "name": "Furniture"
+    }
   },
   {
     "name": "BMX Bike",
     "description": "i have recently upgraded to a car",
     "price": 50,
-    "Category": "Recreational"
+    "category": {
+      "name": "Recreational"
+    }
   },
   {
     "name": "Shake-Weight",
     "description": "it is great, to shake the weight",
     "price": 10,
-    "Category": "Fitness"
+    "category": {
+      "name": "Fitness"
+    }
   },
   {
     "name": "Yeezys",
     "description": "definitely not a fake off brand",
     "price": 300,
-    "Category": "Footwear"
+    "category": {
+      "name": "Footwear"
+    }
   },
   {
     "name": "Mjolnir",
     "description": "Are you worthy?",
     "price": 5,
-    "Category": "Tools"
+    "category": {
+      "name": "Tools"
+    }
   },
   {
     "name": "Litter Box",
     "description": "only used for 5 years, like new",
     "price": 0,
-    "Category": "Free"
+    "category": {
+      "name": "Free"
+    }
   }
 ]
