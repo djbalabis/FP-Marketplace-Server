@@ -43,6 +43,6 @@ startApolloServer(typeDefs, resolvers);
 app.get("/", (req, res) => {
   res.json({ message: "Yoooo World!" });
 });
-app.listen(PORT, () => {
-  console.log(`express server running on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`express server running on port ${PORT}`);
+// });
