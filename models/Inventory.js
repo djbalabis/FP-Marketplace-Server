@@ -16,7 +16,7 @@ const invSchema = new Schema({
   },
   category: {
     type: Category,
-    required: true,
+    required: false,
   },
 });
 
