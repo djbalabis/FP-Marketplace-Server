@@ -1,0 +1,23 @@
+const { ObjectId } = require('mongoose').Types;
+const { Inventory } = require('../models');
+
+module.exports = {
+  getInventory(req, res) {
+    Inventory.find()
+      .then(async (inventory) => {
+        const inventoryObj = {
+          inventory
+        };
+        return res.json(inventoryObj);
+      })
+      .catch((err) => {
+        console.log(err);
+        return res.status(500).json(err);
+      });
+  },
+  createInventory(req, res) {
+    Inventory.create(req.body)
+      .then((inventory) => res.json(inventory))
+      .catch((err) => res.status(500).json(err));
+  }
+};
