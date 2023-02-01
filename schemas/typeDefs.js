@@ -6,17 +6,20 @@ const typeDefs = gql`
     name: String!
     description: String!
     price: Int
-    Category: String!
+    category: Category
   }
   type Category {
     _id: ID!
     name: String!
-    description: String!
     icon: String!
   }
   type Query {
     inventory: [Inventory]
-    category(_id: String): [Category]
+    category(_id: String): Category
+  }
+  type Mutation {
+    addItem(name: String!, description: String!, price: Int): Inventory
+    removeItem(_id: ID): Inventory
   }
 `;
 module.exports = typeDefs;
