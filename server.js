@@ -6,6 +6,7 @@ const path = require("path");
 const { typeDefs, resolvers } = require("./schemas");
 const db = require("./config/connection");
 const routes = require('./routes');
+const { Inventory } = require("./models");
 
 const server = new ApolloServer({
   typeDefs,
@@ -15,6 +16,11 @@ const server = new ApolloServer({
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(routes);
+
+app.delete("/inventory/delete/:id", async (req, res) => {
+  const result = await Inventory.findByIdAndDelete(req.params.id);
+  res.json(result);
+});
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../client/build")));

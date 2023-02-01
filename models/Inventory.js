@@ -1,26 +1,25 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
+const Category = require("./Category");
 
 const invSchema = new Schema({
-    name: {
-        type: String,
-        required: true,
-        unique: true,
-      },
-      description: {
-        type: String,
-        required: true,
-      },
-      price: {
-        type: Number,
-        required: true,
-      },
-      Category: {
-        type: String,
-        required: true,
-        unique: true,
-      }
+  name: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
+  category: {
+    type: Category,
+    required: false,
+  },
 });
 
-const Inventory = model('Inventory', invSchema);
+const Inventory = model("Inventory", invSchema);
 
 module.exports = Inventory;
