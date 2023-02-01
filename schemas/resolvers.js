@@ -15,10 +15,10 @@ const resolvers = {
       const item = await Inventory.create(args);
       return item;
     },
-    // removeItem: async (inventory, {_id }, context) => {
-    //   const remove = await Inventory.remove(_id);
-    //   return remove;
-    // },
+    removeItem: async (inventory, { _id }, context) => {
+      const remove = await Inventory.findByIdAndDelete(_id);
+      return remove;
+    },
   },
 };
 module.exports = resolvers;
