@@ -1,5 +1,5 @@
 const db = require("../config/connection");
-const { Inventory } = require("../models");
+const { Inventory, Profile } = require("../models");
 const profileSeeds = require("./profileSeeds");
 const inventoryData = require("./inventoryData.json");
 
