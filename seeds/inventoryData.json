@@ -1,7 +1,7 @@
 [
   {
     "name": "Sony B-7III",
-    "description": "yes is camera",
+    "description": "Like new",
     "price": 1000,
     "category": {
       "name": "Electronics"
@@ -16,9 +16,49 @@
     }
   },
   {
+    "name": "Xbox Series S",
+    "description": "factory-sealed, includes Halo Infinite",
+    "price": 700,
+    "category": {
+      "name": "Electronics"
+    }
+  },
+  {
+    "name": "iPhone 11",
+    "description": "lightly used, no damage",
+    "price": 900,
+    "category": {
+      "name": "Electronics"
+    }
+  },
+  {
     "name": "Gaming Chair",
     "description": "brand new, hardly used",
     "price": 100,
+    "category": {
+      "name": "Furniture"
+    }
+  },
+  {
+    "name": "Leather Sofa",
+    "description": "5 years old, just recently bought another",
+    "price": 200,
+    "category": {
+      "name": "Furniture"
+    }
+  },
+  {
+    "name": "Kitchen Stools",
+    "description": "great for islands",
+    "price": 50,
+    "category": {
+      "name": "Furniture"
+    }
+  },
+  {
+    "name": "King-Sized Bed",
+    "description": "normal ware & tear",
+    "price": 500,
     "category": {
       "name": "Furniture"
     }
@@ -32,9 +72,57 @@
     }
   },
   {
+    "name": "Unicycle",
+    "description": "its like a bike but with one wheel, i think.",
+    "price": 30,
+    "category": {
+      "name": "Recreational"
+    }
+  },
+  {
+    "name": "Golf Clubs",
+    "description": "they were a gift, and i wasn't very good",
+    "price": 100,
+    "category": {
+      "name": "Recreational"
+    }
+  },
+  {
+    "name": "Kayak",
+    "description": "like new, two seater, no leaks",
+    "price": 250,
+    "category": {
+      "name": "Recreational"
+    }
+  },
+  {
     "name": "Shake-Weight",
     "description": "it is great, to shake the weight",
     "price": 10,
+    "category": {
+      "name": "Fitness"
+    }
+  },
+  {
+    "name": "Bench Press",
+    "description": "lightly used, olympic-style bench",
+    "price": 300,
+    "category": {
+      "name": "Fitness"
+    }
+  },
+  {
+    "name": "Stationary Bike",
+    "description": "a few years old, max weight 250",
+    "price": 200,
+    "category": {
+      "name": "Fitness"
+    }
+  },
+  {
+    "name": "Dumbbells",
+    "description": "from 5-50 lb set",
+    "price": 300,
     "category": {
       "name": "Fitness"
     }
@@ -48,9 +136,57 @@
     }
   },
   {
+    "name": "Penny Loafers",
+    "description": "they were my fathers",
+    "price": 50,
+    "category": {
+      "name": "Footwear"
+    }
+  },
+  {
+    "name": "Nike Air Maxs",
+    "description": "i never wear these anymore, reasonable price",
+    "price": 900,
+    "category": {
+      "name": "Footwear"
+    }
+  },
+  {
+    "name": "Jordan 3s",
+    "description": "authentic, never worn",
+    "price": 700,
+    "category": {
+      "name": "Footwear"
+    }
+  },
+  {
     "name": "Mjolnir",
     "description": "Are you worthy?",
     "price": 5,
+    "category": {
+      "name": "Tools"
+    }
+  },
+  {
+    "name": "Table-Saw",
+    "description": "brand new, watch your fingers",
+    "price": 100,
+    "category": {
+      "name": "Tools"
+    }
+  },
+  {
+    "name": "Cordless Drill",
+    "description": "only a few years old, works like new!",
+    "price": 50,
+    "category": {
+      "name": "Tools"
+    }
+  },
+  {
+    "name": "Orbital Sander",
+    "description": "lightly used, comes with extra sanding paper",
+    "price": 90,
     "category": {
       "name": "Tools"
     }
@@ -61,6 +197,62 @@
     "price": 0,
     "category": {
       "name": "Free"
+    }
+  },
+  {
+    "name": "Mini Fridge",
+    "description": "just got a bigger one, pickup only",
+    "price": 0,
+    "category": {
+      "name": "Free"
+    }
+  },
+  {
+    "name": "Storage Freezer",
+    "description": "is cold, most of the time...",
+    "price": 0,
+    "category": {
+      "name": "Free"
+    }
+  },
+  {
+    "name": "Firewood",
+    "description": "literally cannot give this away, there is too much of it",
+    "price": 0,
+    "category": {
+      "name": "Free"
+    }
+  },
+  {
+    "name": "Website Developer",
+    "description": "full-stack website, please message me for more info",
+    "price": 500,
+    "category": {
+      "name": "Services"
+    }
+  },
+  {
+    "name": "Barber",
+    "description": "15 years experience, hit me up for a consultation",
+    "price": 50,
+    "category": {
+      "name": "Services"
+    }
+  },
+  {
+    "name": "Landscaper",
+    "description": "full service, please call one week in advance",
+    "price": 100,
+    "category": {
+      "name": "Services"
+    }
+  },
+  {
+    "name": "Guitar Lessons",
+    "description": "10 years experience, i can teach anyone. Beginner to Advanced Lessons",
+    "price": 200,
+    "category": {
+      "name": "Services"
     }
   }
 ]
