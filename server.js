@@ -16,6 +16,7 @@ const server = new ApolloServer({
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+app.set("PORT", PORT);
 // app.delete("/inventory/delete/:id", async (req, res) => {
 //   const result = await Inventory.findByIdAndDelete(req.params.id);
 //   res.json(result);
