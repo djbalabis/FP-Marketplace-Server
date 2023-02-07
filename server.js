@@ -1,5 +1,5 @@
 const express = require("express");
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3001;
 const app = express();
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
@@ -46,9 +46,9 @@ const startApolloServer = async (typeDefs, resolvers) => {
 // Call the async function to start the server
 startApolloServer(typeDefs, resolvers);
 
-app.get("/", (req, res) => {
-  res.json({ message: "Yoooo World!" });
-});
+// app.get("/", (req, res) => {
+//   res.json({ message: "Yoooo World!" });
+// });
 // app.listen(PORT, () => {
 //   console.log(`express server running on port ${PORT}`);
 // });
