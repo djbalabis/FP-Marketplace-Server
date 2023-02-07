@@ -8,4 +8,6 @@ mongoose.connect(
   }
 );
 
+mongoose.set('strictQuery', true);
+
 module.exports = mongoose.connection;
