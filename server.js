@@ -7,9 +7,12 @@ const { typeDefs, resolvers } = require("./schemas");
 const db = require("./config/connection");
 // const { Inventory } = require("./models");
 
+mongoose.set('strictQuery', true);
+
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  cache: "bounded"
 });
 
 app.use(express.urlencoded({ extended: false }));
