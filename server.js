@@ -5,20 +5,21 @@ const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
 const { typeDefs, resolvers } = require("./schemas");
 const db = require("./config/connection");
-const { Inventory } = require("./models");
+// const { Inventory } = require("./models");
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  context: authMiddleware,
 });
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.delete("/inventory/delete/:id", async (req, res) => {
-  const result = await Inventory.findByIdAndDelete(req.params.id);
-  res.json(result);
-});
+// app.delete("/inventory/delete/:id", async (req, res) => {
+//   const result = await Inventory.findByIdAndDelete(req.params.id);
+//   res.json(result);
+// });
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../client/build")));
